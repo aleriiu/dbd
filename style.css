@@ -18,7 +18,8 @@ li {
     list-style-type: none;
 }
 
-section {
+section,
+footer {
     padding: 7rem 5rem;
 }
 
@@ -514,6 +515,8 @@ section {
 
 .order {
     background-image: url(./images/bg.png);
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -657,4 +660,79 @@ form {
 
 iframe {
     border-radius: 40px;
+}
+
+
+
+
+.partners {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F5F5;
+}
+
+.partners_img {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+
+
+.footer {
+    background-color: #134D3F;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text-white {
+    color: #FFFFFF;
+}
+
+.footer_img-container {
+    align-items: flex-end;
+}
+
+hr {
+    border: 1px solid #FFFFFF;
+}
+
+.footer_info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer_text-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_info-text {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.footer_text-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
 }
