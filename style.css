@@ -1,0 +1,660 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #009A73;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    padding: 7rem 5rem;
+}
+
+.bg {
+    background-image: url(./images/bg_main.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    padding: 1rem 4rem 0.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 148px;
+}
+
+.header_nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.header_nav_text,
+.header_nav_link {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.btn_green {
+    background-color: #009A73;
+    border: 3px solid #009A73;
+    padding: 0.625rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn_green:hover {
+    background-color: #FFFFFF;
+    color: #009A73;
+}
+
+
+.hero_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.688rem;
+    padding: 5.75rem 0;
+}
+
+.hero_over-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 112%;
+    text-align: center;
+
+}
+
+.hero_title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 120%;
+    letter-spacing: -4%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero_under-title {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 150%;
+    text-align: center;
+    width: 50%;
+}
+
+.arrow-img {
+    width: 36px;
+}
+
+.btn_hero_container {
+    background-color: initial;
+    border: 3px solid #009A73;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    gap: 1.125rem;
+    padding: 0.313rem;
+}
+
+.btn_hero {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 150%;
+    color: #000000;
+    padding-left: 1.25rem;
+}
+
+.hero_container-pics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-pic {
+    width: 600px;
+    border-radius: 40px;
+}
+
+
+
+
+.goods {
+    background-color: #EBEBEB80;
+    padding: 5rem;
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
+
+.goods_text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.goods_title-over {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.goods_title-container {
+    display: flex;
+    align-items: center;
+    gap: 0.563rem;
+}
+
+.goods_title {
+    color: #000000;
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 120%;
+    letter-spacing: -2%;
+}
+
+.goods_title-img {
+    width: 26px;
+}
+
+.goods_title-under {
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 145%;
+}
+
+.cards_goods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.card_goods {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.card_goods-img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.card_goods-name {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 140%;
+    color: #000000;
+}
+
+.card_goods-price {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 150%;
+    color: #000000;
+}
+
+
+
+.advantages {
+    gap: 5rem;
+    padding: 7rem 5rem;
+    display: flex;
+}
+
+.advantages_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.advantages-img {
+    width: 600px;
+    border-radius: 20px;
+}
+
+.advantages_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2.5rem 0;
+}
+
+.advantages_card {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages_green-text {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: #009A73;
+}
+
+.advantages_text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+
+
+
+.patent {
+    background-color: #EBEBEB80;
+    display: flex;
+    flex-direction: column;
+    gap: 98px;
+}
+
+.patent-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 112.00000000000001%;
+    letter-spacing: -2%;
+    color: #000000;
+}
+
+.patent-dash_img {
+    width: 148px;
+    border-radius: 80px;
+}
+
+.patent_container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.patent_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+}
+
+.patent_card {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.patent_card-img {
+    width: 24px;
+}
+
+.patent_card-text {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 112.00000000000001%;
+    letter-spacing: -1%;
+    color: #000000;
+}
+
+.patent-img {
+    width: 224px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 3px 1px #E9E9E966;
+}
+
+.patent-img5,
+.patent-img2,
+.patent-img3,
+.patent-img4 {
+    position: absolute;
+}
+
+.patent-img1 {
+    right: 0;
+    z-index: 2;
+    position: relative;
+}
+
+.patent-img2 {
+    right: 25%;
+}
+
+.patent-img3 {
+    right: 20%;
+}
+
+.patent-img4 {
+    right: 15%;
+}
+
+.patent-img5 {
+    right: 10%;
+}
+
+.information-img {
+    width: 600px;
+    border-radius: 40px;
+}
+
+.information_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info_title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: #000000;
+}
+
+.information_container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.information-text {
+    color: #000000;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 146%;
+    letter-spacing: 0%;
+}
+
+.information-text-bold {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 146%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.information_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.information_card {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.information_card-img {
+    width: 20px;
+}
+
+.information_card-text {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 146%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+
+
+
+.delivery {
+    display: flex;
+    background-color: #EBEBEB80;
+    gap: 5rem;
+}
+
+.delivery_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+}
+
+.delivery_img-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.625rem;
+}
+
+.delivery_card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.625rem;
+    width: 50%;
+}
+
+.delivery_card {
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.delivery_card-main {
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery_card-main>.delivery_card {
+    padding: 0;
+}
+
+.delivery_card-text-underline {
+    text-decoration: underline;
+}
+
+.delivery_card-img {
+    width: 115px;
+}
+
+.delivery_card-title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: #000000;
+}
+
+.delivery_card-text,
+.delivery_card-text-bold {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+
+.delivery_card-text-bold {
+    font-weight: 500;
+}
+
+.delivery_card-width {
+    width: 47%;
+    height: 249px;
+}
+
+
+
+.order {
+    background-image: url(./images/bg.png);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.order_text {
+    text-align: center;
+}
+
+.order_form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.688rem;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-name,
+.input-phone {
+    border: 1px solid #EBEDF0;
+    background-color: #EBEDF0;
+    opacity: 1;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+}
+
+.input-name::placeholder,
+.input-phone::placeholder {
+    color: #000000;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.btn_order {
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+}
+
+.check-container {
+    display: flex;
+    gap: 0.313rem;
+    width: 45%;
+}
+
+.check-text,
+.check-text_underline {
+    font-weight: 300;
+    font-size: 0.5rem;
+    line-height: 112.00000000000001%;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.check-text_underline {
+    text-decoration: underline;
+}
+
+
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.contacts_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_title {
+    font-family: "Nunito Sans", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 120%;
+    letter-spacing: -2%;
+    color: #000000;
+}
+
+.contacts_container-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contacts_info {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contacts_container-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 24px;
+}
+
+.contacts_text-bold {
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 140%;
+    letter-spacing: 0%;
+}
+
+.contacts_text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+}
+
+.contact-us_container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.contact-us_phones {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-us_social {
+    display: flex;
+    gap: 1.25rem;
+}
+
+iframe {
+    border-radius: 40px;
+}
