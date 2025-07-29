@@ -23,10 +23,15 @@ footer {
     padding: 7rem 5rem;
 }
 
-.bg {
+body {
     background-image: url(./images/bg_main.png);
     background-position: center;
-    background-size: cover;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+.section-bg {
+    background-color: #F3F3F3;
 }
 
 .header {
@@ -71,7 +76,9 @@ footer {
     color: #009A73;
 }
 
-
+.hero {
+    padding: 3rem 5rem 7rem 5rem;
+}
 .hero_container {
     display: flex;
     flex-direction: column;
@@ -86,6 +93,7 @@ footer {
     font-size: 1.75rem;
     line-height: 112%;
     text-align: center;
+    letter-spacing: -0.6px;
 
 }
 
@@ -94,7 +102,7 @@ footer {
     font-weight: 700;
     font-size: 4rem;
     line-height: 120%;
-    letter-spacing: -4%;
+    letter-spacing: -2.6px;
     text-align: center;
     text-transform: uppercase;
 }
@@ -111,7 +119,7 @@ footer {
     width: 36px;
 }
 
-.btn_hero_container {
+.btn {
     background-color: initial;
     border: 3px solid #009A73;
     border-radius: 50px;
@@ -119,9 +127,36 @@ footer {
     display: flex;
     gap: 1.125rem;
     padding: 0.313rem;
+    position: relative;
 }
 
-.btn_hero {
+.btn:hover .arrow-img {
+    animation:
+    .8s linear 0s infinite alternate move
+}
+
+
+    @keyframes move {
+      from {
+    transform: translateX(0);
+    }
+    to {
+    transform: translateX(-8px);
+    }
+}
+
+
+
+.btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.btn-text {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 150%;
@@ -131,19 +166,19 @@ footer {
 
 .hero_container-pics {
     display: flex;
-    justify-content: space-between;
+    gap: 5rem;
+}
+
+.hero-pic-wrapper {
+    width: 46.7%;
 }
 
 .hero-pic {
-    width: 600px;
+    width: 100%;
     border-radius: 40px;
 }
 
-
-
-
 .goods {
-    background-color: #EBEBEB80;
     display: flex;
     gap: 5rem;
     flex-direction: column;
@@ -170,7 +205,7 @@ footer {
 
 .goods_title-container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 0.563rem;
 }
 
@@ -180,14 +215,14 @@ footer {
     font-weight: 700;
     font-size: 3.125rem;
     line-height: 120%;
-    letter-spacing: -2%;
+    letter-spacing: -1px;
 }
 
 .goods_title-img {
     width: 26px;
 }
 
-.goods_title-under {
+.text {
     color: #000000;
     font-weight: 400;
     font-size: 1.125rem;
@@ -259,13 +294,13 @@ footer {
 .advantages_green-text {
     font-family: "Nunito Sans", sans-serif;
     font-weight: 700;
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     line-height: 120%;
-    letter-spacing: -2%;
+    letter-spacing: -0.6px;
     color: #009A73;
 }
 
-.advantages_text {
+.text {
     font-weight: 400;
     font-size: 1rem;
     line-height: 150%;
@@ -277,7 +312,6 @@ footer {
 
 
 .patent {
-    background-color: #EBEBEB80;
     display: flex;
     flex-direction: column;
     gap: 98px;
@@ -330,12 +364,13 @@ footer {
 
 .patent_container-img {
     position: relative;
+    font-size: 0;
 }
 
 .patent-img {
     width: 224px;
     border-radius: 20px;
-    box-shadow: 0px 3px 3px 1px #E9E9E966;
+    box-shadow: 0px 3px 3px 1px rgba(233, 233, 233, 0.4);
 }
 
 .patent-img5,
@@ -388,6 +423,7 @@ footer {
 .information-img {
     width: 600px;
     border-radius: 40px;
+    border: 2px solid #eeeeee;
 }
 
 .information_container {
@@ -456,7 +492,6 @@ footer {
 
 .delivery {
     display: flex;
-    background-color: #EBEBEB80;
     gap: 5rem;
 }
 
@@ -471,6 +506,15 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 2.625rem;
+}
+
+.delivery_img-container img {
+    filter: grayscale(1);
+    transition: filter 0.2s ease;
+}
+
+.delivery_img-container img:hover {
+    filter: grayscale(0);
 }
 
 .delivery_card-container {
@@ -545,12 +589,13 @@ footer {
     width: 370px;
 }
 
-
-
-.order {
-    background-image: url(./images/bg.png);
+.form-bg {
+    background-image: url(./images/form-bg.webp);
     background-position: center;
     background-size: cover;
+}
+
+.order {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
@@ -608,15 +653,15 @@ form {
 .check-container {
     display: flex;
     gap: 0.313rem;
-    width: 60%;
+    max-width: 610px;
 }
 
 .check-text,
 .check-text_underline {
     font-weight: 300;
-    font-size: 0.5rem;
+    font-size: 0.625rem;
     line-height: 112.00000000000001%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     color: #000000;
 }
 
@@ -711,7 +756,6 @@ iframe {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F5F5F5;
     gap: 5rem;
 }
 
@@ -766,13 +810,11 @@ iframe {
     align-items: center;
 }
 
-
-
-
-
+.footer-wrapper {
+    background-color: #134D3F;
+}
 
 .footer {
-    background-color: #134D3F;
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -846,7 +888,6 @@ hr {
 
 @media (min-width: 1281px) and (max-width: 1440px) {
 
-    .hero-pic,
     .advantages-img,
     .information-img {
         width: 500px;
@@ -862,8 +903,11 @@ hr {
         width: 100%;
     }
 
+    .hero-pic-wrapper {
+        width: 47.7%;
+    }
+
     .hero_container-pics {
-        flex-direction: column;
         gap: 2.25rem;
     }
 
@@ -928,7 +972,7 @@ hr {
         flex-direction: column;
     }
 
-      .delivery_card-container {
+    .delivery_card-container {
         flex-wrap: nowrap;
         flex-direction: column;
         width: 100%;
@@ -992,7 +1036,7 @@ hr {
         font-size: 0.75rem;
     }
 
-    .btn_hero {
+    .btn-text {
         font-size: 1.125rem;
         padding-left: 1rem;
     }
@@ -1001,12 +1045,16 @@ hr {
         width: 26px;
     }
 
-    .btn_hero_container {
+    .btn {
         gap: 0.875rem;
     }
 
-    .hero-pic {
-        width: 340px;
+    .hero_container-pics {
+        flex-direction: column;
+    }
+
+    .hero-pic-wrapper {
+        width: 100%;
     }
 
     .goods_title-over {
@@ -1021,7 +1069,7 @@ hr {
         width: 16px;
     }
 
-    .goods_title-under,
+    .text,
     .card_goods-name {
         font-size: 0.75rem;
     }
@@ -1050,7 +1098,7 @@ hr {
         font-size: 1.5rem;
     }
 
-    .advantages_text {
+    .text {
         font-size: 0.75rem;
     }
 
