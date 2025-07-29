@@ -853,7 +853,106 @@ hr {
     }
 }
 
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+    .header_nav {
+        display: none;
+    }
+
+    .hero_under-title {
+        width: 100%;
+    }
+
+    .hero_container-pics {
+        flex-direction: column;
+        gap: 2.25rem;
+    }
+
+    .card_goods-img {
+        width: 264px;
+    }
+
+    .advantages {
+        flex-direction: column-reverse;
+    }
+
+    .patent-dash_img {
+        width: 116px;
+    }
+
+    .patent-title {
+        font-size: 2rem;
+    }
+
+    .patent_container {
+        flex-direction: column-reverse;
+        align-items: unset;
+    }
+
+    .patent_card-text {
+        font-size: 1rem;
+    }
+
+    .patent_card-img {
+        width: 12px;
+    }
+
+    .patent_container-img {
+        overflow-x: scroll;
+        display: flex;
+    }
+
+    .patent {
+        gap: 3.75rem;
+    }
+
+    .patent-img5,
+    .patent-img2,
+    .patent-img3,
+    .patent-img4 {
+        position: static;
+    }
+
+    .patent-img {
+        width: 141px;
+    }
+
+    .information-group {
+        flex-direction: column-reverse;
+    }
+
+    .information-mob {
+        flex-direction: column;
+    }
+
+    .delivery {
+        flex-direction: column;
+    }
+
+      .delivery_card-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .order_text-container {
+        width: 100%;
+    }
+
+    .check-container {
+        width: 80%;
+    }
+
+
+    .contacts_container,
+    .partners {
+        flex-direction: column;
+    }
+
+    .footer_container {
+        flex-direction: column;
+    }
+
+}
 
 
 @media (max-width: 790px) {
@@ -876,10 +975,6 @@ hr {
         width: 96px;
     }
 
-    .header_nav {
-        display: none;
-    }
-
     .btn_green {
         font-size: 0.75rem;
         padding: 0.375rem 1.063rem;
@@ -895,7 +990,6 @@ hr {
 
     .hero_under-title {
         font-size: 0.75rem;
-        width: 100%;
     }
 
     .btn_hero {
@@ -909,11 +1003,6 @@ hr {
 
     .btn_hero_container {
         gap: 0.875rem;
-    }
-
-    .hero_container-pics {
-        flex-direction: column;
-        gap: 2.25rem;
     }
 
     .hero-pic {
@@ -949,10 +1038,6 @@ hr {
         gap: 0.75rem;
     }
 
-    .advantages {
-        flex-direction: column-reverse;
-    }
-
     .advantages_container {
         gap: 1rem;
     }
@@ -973,52 +1058,8 @@ hr {
         width: 340px;
     }
 
-    .patent-dash_img {
-        width: 116px;
-    }
-
-    .patent-title {
-        font-size: 2rem;
-    }
-
-    .patent_container {
-        flex-direction: column-reverse;
-    }
-
-    .patent_card-text {
-        font-size: 1rem;
-    }
-
-    .patent_card-img {
-        width: 12px;
-    }
-
-    .patent_container-img {
-        overflow-x: scroll;
-        display: flex;
-    }
-
-    .patent {
-        gap: 3.75rem;
-    }
-
-    .patent-img5,
-    .patent-img2,
-    .patent-img3,
-    .patent-img4 {
-        position: static;
-    }
-
-    .patent-img {
-        width: 141px;
-    }
-
     .information-img {
         width: 340px;
-    }
-
-    .information-mob {
-        flex-direction: column;
     }
 
     .info_title {
@@ -1041,22 +1082,12 @@ hr {
         gap: 0.25rem;
     }
 
-    .delivery {
-        flex-direction: column;
-    }
-
     .delivery_info {
         width: 100%;
     }
 
     .delivery_card-img {
         display: none;
-    }
-
-    .delivery_card-container {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        width: 100%;
     }
 
     .delivery_card-width {
@@ -1078,15 +1109,6 @@ hr {
     }
 
     form {
-        flex-direction: column;
-    }
-
-    .contacts_container,
-    .partners {
-        flex-direction: column;
-    }
-
-    .footer_container {
         flex-direction: column;
     }
 
