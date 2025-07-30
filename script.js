@@ -106,3 +106,16 @@ popUp.addEventListener('click', () => {
 closeBtnPopUp.addEventListener('click', () => {
     modalMenuPopUp.style.display = 'none';
 })
+
+
+const closeBtnPopUpHero = document.querySelector('#close-pop-up');
+const modalMenuPopUpHero = document.querySelector('.modal_menu-pop-up');
+const popUpHero = document.querySelector('#link-popup-hero');
+
+popUpHero.addEventListener('click', () => {
+    modalMenuPopUpHero.style.display = 'flex';
+});
+
+closeBtnPopUpHero.addEventListener('click', () => {
+    modalMenuPopUpHero.style.display = 'none';
+})
