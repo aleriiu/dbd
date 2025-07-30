@@ -634,7 +634,6 @@ body {
 
 .delivery_card-width {
     width: 47%;
-    height: 249px;
 }
 
 .delivery_img-ozon {
@@ -648,11 +647,6 @@ body {
 .delivery_img-container-mob {
     display: none;
 }
-
-
-
-
-
 
 .form-bg {
     background-image: url(./images/form-bg.webp);
@@ -1443,7 +1437,6 @@ hr {
 
     .delivery_card-width {
         width: 100%;
-        height: 132px;
     }
 
     .delivery_card-title {
@@ -1457,6 +1450,30 @@ hr {
     .delivery_card-text,
     .delivery_card-text-bold {
         font-size: 0.875rem;
+    }
+
+    .delivery_card-text-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .delivery_card-text-1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .delivery_card-text-2 {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .delivery_card-text-3 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .delivery_card-text-4 {
+        grid-area: 2 / 2 / 3 / 3;
     }
 
     form {
@@ -1541,7 +1558,8 @@ hr {
     .hero-pic,
     .information-img,
     iframe,
-    .modal_menu-bg-pop-up, .advantages-img {
+    .modal_menu-bg-pop-up,
+    .advantages-img {
         border-radius: 20px;
     }
 
