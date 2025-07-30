@@ -95,8 +95,8 @@ function prevSlide() {
 // pop-up
 
 
-const closeBtnPopUp = document.querySelector('#close-pop-up');
-const modalMenuPopUp = document.querySelector('.modal_menu-pop-up');
+const closeBtnPopUp = document.querySelector('#close-pop-up-phone');
+const modalMenuPopUp = document.querySelector('.modal_menu-pop-up-phone');
 const popUp = document.querySelector('#link-popup');
 
 popUp.addEventListener('click', () => {
