@@ -288,10 +288,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
+    width: 31%;
 }
 
 .card_goods-img {
-    width: 400px;
     border-radius: 20px;
 }
 
@@ -323,8 +323,12 @@ body {
     gap: 2.5rem;
 }
 
+.advantages-pic-wrapper {
+    width: 100%;
+}
+
 .advantages-img {
-    width: 600px;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -473,7 +477,7 @@ body {
 }
 
 .information-img {
-    width: 600px;
+    width: 100%;
     border-radius: 40px;
     border: 2px solid #eeeeee;
 }
@@ -749,7 +753,7 @@ form {
     font-weight: 700;
     font-size: 3rem;
     line-height: 120%;
-    letter-spacing: 0.6px;
+    letter-spacing: -1.0px;
     color: #000000;
 }
 
@@ -982,8 +986,8 @@ hr {
         gap: 2.25rem;
     }
 
-    .card_goods-img {
-        width: 264px;
+    .card_goods {
+        width: 29%;
     }
 
     .advantages {
@@ -1074,6 +1078,10 @@ hr {
     .delivery {
         flex-direction: column;
         gap: 2.25rem;
+    }
+
+    .delivery_info {
+        width: 100%;
     }
 
     .delivery_card-container {
@@ -1192,13 +1200,13 @@ hr {
         width: 16px;
     }
 
+    .card_goods {
+        width: 48.5%;
+    }
+
     .text,
     .card_goods-name {
         font-size: 0.75rem;
-    }
-
-    .card_goods-img {
-        width: 164px;
     }
 
     .card_goods-price {
@@ -1223,14 +1231,6 @@ hr {
 
     .text {
         font-size: 0.75rem;
-    }
-
-    .advantages-img {
-        width: 340px;
-    }
-
-    .information-img {
-        width: 340px;
     }
 
     .info_title {
