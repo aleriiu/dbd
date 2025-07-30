@@ -1004,6 +1004,32 @@ hr {
         gap: 2rem;
     }
 
+    .patent_container-img {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.813rem;
+        overflow-x: scroll;
+        padding-bottom: 2.125rem;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .patent_container-img::-webkit-scrollbar {
+        height: 9px;
+        background: #FFFFFF;
+        border-radius: 10px;
+    }
+
+
+    .patent_container-img::-webkit-scrollbar-thumb:horizontal {
+        background: #009A73;
+        border-radius: 10px;
+    }
+
+    .patent_container-img::-webkit-scrollbar-thumb:hover {
+        background: #009A73;
+    }
+
     .patent {
         gap: 3.75rem;
     }
