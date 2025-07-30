@@ -1,5 +1,7 @@
 'use strict';
 
+//burger menu
+
 const closeBtn = document.querySelector('#close');
 const modalMenu = document.querySelector('.modal_menu');
 const mobMenu = document.querySelector('#menu');
@@ -12,6 +14,8 @@ closeBtn.addEventListener('click', () => {
     modalMenu.style.display = 'none';
 })
 
+
+// сертификаты
 
 
 const galleryImages = document.querySelectorAll('.patent-img');
@@ -84,3 +88,21 @@ function prevSlide() {
   }
   popupImage.src = galleryImages[currentIndex].getAttribute('src');
 }
+
+
+
+
+// pop-up
+
+
+const closeBtnPopUp = document.querySelector('#close-pop-up');
+const modalMenuPopUp = document.querySelector('.modal_menu-pop-up');
+const popUp = document.querySelector('#link-popup');
+
+popUp.addEventListener('click', () => {
+    modalMenuPopUp.style.display = 'flex';
+});
+
+closeBtnPopUp.addEventListener('click', () => {
+    modalMenuPopUp.style.display = 'none';
+})
