@@ -329,7 +329,7 @@ body {
 
 .advantages-img {
     width: 100%;
-    border-radius: 20px;
+    border-radius: 40px;
 }
 
 .advantages_cards {
@@ -1464,6 +1464,10 @@ hr {
         width: 80%;
     }
 
+    .delivery_card-main {
+        height: 168px;
+    }
+
     .delivery_img-ozon {
         width: 140px;
     }
@@ -1532,6 +1536,19 @@ hr {
 
     .popup_img-yandex {
         width: 180px;
+    }
+
+    .hero-pic,
+    .information-img,
+    iframe,
+    .modal_menu-bg-pop-up, .advantages-img {
+        border-radius: 20px;
+    }
+
+    .card_goods-img,
+    .delivery_card-main,
+    .delivery_card {
+        border-radius: 10px;
     }
 
 }
