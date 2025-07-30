@@ -65,7 +65,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #00000070;
+    background-color: #FFFFFF70;
     position: fixed;
     justify-content: space-between;
     z-index: 10;
@@ -74,12 +74,14 @@ body {
 }
 
 .modal_menu-bg {
-    background-image: url(./images/bg_main.png);
-    background-position: center;
-    background-size: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
     width: 100%;
     height: auto;
-    padding: 2.125rem 4rem 2.125rem 2.813rem;
+    padding: 1.5rem 4rem;
 }
 
 .modal_menu-container {
@@ -91,9 +93,6 @@ body {
 }
 
 .modal-btn-back {
-    position: absolute;
-    right: 30px;
-    top: 18px;
     cursor: pointer;
 }
 
@@ -944,6 +943,11 @@ hr {
 }
 
 @media (max-width: 1280px) {
+
+    body {
+        background-size: cover;
+    }
+
     .header_nav {
         display: none;
     }
@@ -983,6 +987,7 @@ hr {
     .patent_container {
         flex-direction: column-reverse;
         align-items: unset;
+        gap: 2rem;
     }
 
     .patent_card-text {
@@ -996,6 +1001,7 @@ hr {
     .patent_container-img {
         overflow-x: scroll;
         display: flex;
+        gap: 2rem;
     }
 
     .patent {
