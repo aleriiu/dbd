@@ -1463,11 +1463,27 @@ div.swiper-wrapper {
     }
 
     div.swiper-wrapper {
-        width: 84% !important;
+        width: 89% !important;
     }
 
     .reviews-swiper {
         align-items: flex-end;
+    }
+
+    .modal_menu-bg-pop-up-phone {
+        width: 70%;
+    }
+
+    #a {
+        order: 2;
+    }
+
+    #b {
+        order: 3;
+    }
+
+    #c {
+        order: 1;
     }
 
 }
@@ -1743,7 +1759,23 @@ div.swiper-wrapper {
     }
 
     .review-pic-wrapper img {
-        width: 330px;
+        width: 280px;
+    }
+
+    .modal_menu-bg-pop-up-phone {
+        width: 93%;
+    }
+
+    .review-text {
+        font-size: 0.8rem;
+    }
+
+    .button-prev, .button-next {
+        display: none;
+    }
+
+     div.swiper-wrapper {
+        width: 98% !important;
     }
 
 }
