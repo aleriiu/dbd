@@ -1275,6 +1275,10 @@ div.swiper-wrapper {
         max-width: 1440px;
         margin: auto;
     }
+
+    .information_container {
+        width: 100%;
+    }
 }
 
 @media (min-width: 1281px) and (max-width: 1440px) {
