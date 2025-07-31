@@ -1134,6 +1134,7 @@ hr {
     padding: 3.125rem;
     border-radius: 40px;
     position: relative;
+    border: #009A73 3px solid;
 }
 
 .modal_menu-container-pop-up-phone {
