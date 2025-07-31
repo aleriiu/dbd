@@ -1742,4 +1742,8 @@ div.swiper-wrapper {
         border-radius: 10px;
     }
 
+    .review-pic-wrapper img {
+        width: 330px;
+    }
+
 }
