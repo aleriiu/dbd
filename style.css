@@ -380,6 +380,10 @@ body {
     color: #000000;
 }
 
+.patent-title-mob {
+    display: none;
+}
+
 .patent-dash_img {
     width: 148px;
     border-radius: 80px;
@@ -1124,7 +1128,7 @@ hr {
 }
 
 .modal_menu-bg-pop-up-phone {
-    background-color: #EEEEEE;
+    background-color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1669,6 +1673,14 @@ div.swiper-wrapper {
         grid-area: 2 / 2 / 3 / 3;
     }
 
+    .patent-title-desktop {
+        display: none;
+    }
+
+    .patent-title-mob {
+        display: block;
+    }
+
     form {
         flex-direction: column;
         width: 80%;
@@ -1754,7 +1766,8 @@ div.swiper-wrapper {
 
     .card_goods-img,
     .delivery_card-main,
-    .delivery_card {
+    .delivery_card,
+    .patent-img {
         border-radius: 10px;
     }
 
@@ -1770,11 +1783,12 @@ div.swiper-wrapper {
         font-size: 0.8rem;
     }
 
-    .button-prev, .button-next {
+    .button-prev,
+    .button-next {
         display: none;
     }
 
-     div.swiper-wrapper {
+    div.swiper-wrapper {
         width: 98% !important;
     }
 
