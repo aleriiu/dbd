@@ -1778,4 +1778,8 @@ div.swiper-wrapper {
         width: 98% !important;
     }
 
+    .review-container {
+        padding: 0;
+    }
+
 }
