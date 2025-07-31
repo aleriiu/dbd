@@ -1173,9 +1173,13 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3.625rem 1.875rem;
+    padding: 0 1.875rem;
     gap: 2rem;
     width: 100%;
+}
+
+div.swiper-wrapper {
+    width: 90% !important;
 }
 
 .review-container-slider {
@@ -1189,10 +1193,12 @@ hr {
 
 .review-container-slider-group {
     display: flex;
+    gap: 1.875rem;
+    align-items: center;
 }
 
 .review-pic-wrapper img {
-    width: 100%;
+    width: 400px;
     border-radius: 20px;
 }
 
@@ -1437,6 +1443,31 @@ hr {
 
     .modal_menu-bg-pop-up {
         width: 92%;
+    }
+
+    .review-container-slider {
+        align-items: flex-start;
+        padding: 0;
+    }
+
+    .review-container-slider-group {
+        flex-direction: column;
+    }
+
+    .review-text {
+        text-align: left;
+    }
+
+    .review-pic-wrapper {
+        margin-bottom: 22px;
+    }
+
+    div.swiper-wrapper {
+        width: 84% !important;
+    }
+
+    .reviews-swiper {
+        align-items: flex-end;
     }
 
 }
